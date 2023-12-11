@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const user = require('../query/user');
+// Include your query file
+//const example = require('../query/example');
 
+// Edit or add your routers
 router.post('/login', async function(req, res, next) {
   try {
     res.json(await user.login(req.body));

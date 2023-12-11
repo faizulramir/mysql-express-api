@@ -1,10 +1,10 @@
+// change your db connection here
 const config = {
   db: {
-    /* don't expose password or any sensitive info, done only for demo */
     host: "localhost",
     user: "root",
     password: "",
-    database: "res_q_food",
+    database: "",
     connectTimeout: 60000
   },
   listPerPage: 10,

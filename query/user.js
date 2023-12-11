@@ -1,6 +1,8 @@
 const db = require('../services/db');
 const helper = require('../services/helper');
 
+// Edit your queries function here
+
 async function get(){
     const rows = await db.query(
       `SELECT * FROM users`
@@ -60,6 +62,8 @@ async function destroy(user){
         data
     }
 }
+
+// dont forget to add exports here
 
 module.exports = {
     login,
